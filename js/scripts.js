@@ -2,9 +2,7 @@
 window.addEventListener("load", function() {
     let story = document.getElementById("quiz");
     
-    
     let resetBtn = document.getElementById("reset");
-    resetBtn.style.display = "none";
   
     let form = document.querySelector("form");
   

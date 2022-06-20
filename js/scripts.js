@@ -1,8 +1,8 @@
 // User Interface Logic
 window.addEventListener("load", function() {
     let story = document.getElementById("quiz");
-    quiz.style.display = "none";
-  
+    
+    
     let resetBtn = document.getElementById("reset");
     resetBtn.style.display = "none";
   

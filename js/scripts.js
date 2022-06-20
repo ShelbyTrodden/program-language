@@ -12,7 +12,7 @@ window.addEventListener("load", function() {
       const qThreeInput= document.getElementById(parseInt("#question3Input").value());
       const qFourInput = document.getElementById(parseInt("#question4Input").value());
       const qFiveInput = document.getElementById(parseInt("#question5Input").value());
-      const qSixInput = document.getElementById(parseInt("#question5Input").value());
+      const qSixInput = document.getElementById(parseInt("#question6Input").value());
 
       let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
         if (final <6){
@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
         } else {
           ("#resultC").show();  
         }
-        
+
       event.preventDefault();
 
     });

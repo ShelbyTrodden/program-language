@@ -25,9 +25,6 @@ window.addEventListener("load", function() {
           ("#resultB").show();
         } else 
           ("#resultC").show();  
-  
-      quiz.removeAttribute("style");
-      event.preventDefault();
     });
   
     form.addEventListener("submit", function() {

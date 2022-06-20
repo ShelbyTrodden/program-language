@@ -1,20 +1,20 @@
 // User Interface Logic
 window.addEventListener("load", function() {
-    let story = document.getElementById("quiz");
+    let quiz = document.getElementById("quiz");
     
     let resetBtn = document.getElementById("reset");
   
     let form = document.querySelector("form");
   
     form.addEventListener("submit", function(event) {
-      const qOneInput = document.getElementById(parseInt("question1Input")).value;
-      const qTwoInput = document.getElementById(parseInt("question2Input")).value;
-      const qThreeInput= document.getElementById(parseInt("question3Input")).value;
-      const qFourInput = document.getElementById(parseInt("question4Input")).value;
-      const qFiveInput = document.getElementById(parseInt("question5Input")).value;
-      const qSix6Input = document.getElementById(parseInt("question5Input")).value;
+      const qOneInput = document.getElementById(parseInt("#question1Input")).value;
+      const qTwoInput = document.getElementById(parseInt("#question2Input")).value;
+      const qThreeInput= document.getElementById(parseInt("#question3Input")).value;
+      const qFourInput = document.getElementById(parseInt("#question4Input")).value;
+      const qFiveInput = document.getElementById(parseInt("#question5Input")).value;
+      const qSix6Input = document.getElementById(parseInt("#question5Input")).value;
 
-      const final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
+      let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
         if (final <6){
           ("#resultNull").show();
         } else if (final <9){
@@ -24,9 +24,8 @@ window.addEventListener("load", function() {
         } else 
           ("#resultC").show();  
     });
-  
     form.addEventListener("submit", function() {
-      resetBtn.removeAttribute("style");
+        resetBtn.removeAttribute("style");
     }); 
   
     resetBtn.addEventListener("click", function() {

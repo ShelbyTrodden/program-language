@@ -20,7 +20,7 @@ _This is a quiz created to help prospective software engineering students select
 ## Setup/Installation Requirements
 * Clone this repository to your desktop
 * Navigate to the top level of the directory
-* Open programming-language/index.html in your browser
+* Open program-language/index.html in your browser
 
 ## Known Bugs
 * No known issues

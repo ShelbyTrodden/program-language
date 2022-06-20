@@ -4,6 +4,7 @@
 #resultNull {
   display: none;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -43,7 +44,7 @@ h4{
   padding:20px;
 }
 
-.btn {
+button {
   color: rgb(56, 25, 160);
   font-weight: bold;
   border: 2px solid black;

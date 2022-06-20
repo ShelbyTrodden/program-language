@@ -7,12 +7,12 @@ window.addEventListener("load", function() {
     let form = document.querySelector("form");
   
     form.addEventListener("submit", function(event) {
-      const qOneInput = document.getElementById(parseInt("#question1Input")).value;
-      const qTwoInput = document.getElementById(parseInt("#question2Input")).value;
-      const qThreeInput= document.getElementById(parseInt("#question3Input")).value;
-      const qFourInput = document.getElementById(parseInt("#question4Input")).value;
-      const qFiveInput = document.getElementById(parseInt("#question5Input")).value;
-      const qSix6Input = document.getElementById(parseInt("#question5Input")).value;
+      const qOneInput = document.getElementById(parseInt("#question1Input").value());
+      const qTwoInput = document.getElementById(parseInt("#question2Input").value());
+      const qThreeInput= document.getElementById(parseInt("#question3Input").value());
+      const qFourInput = document.getElementById(parseInt("#question4Input").value());
+      const qFiveInput = document.getElementById(parseInt("#question5Input").value());
+      const qSixInput = document.getElementById(parseInt("#question5Input").value());
 
       let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
         if (final <6){
@@ -21,9 +21,14 @@ window.addEventListener("load", function() {
           ("#resultA").show();
         } else if  (final <13 ){
           ("#resultB").show();
-        } else 
+        } else {
           ("#resultC").show();  
+        }
+        
+      event.preventDefault();
+
     });
+    
     form.addEventListener("submit", function() {
         resetBtn.removeAttribute("style");
     }); 

@@ -43,7 +43,9 @@ h4{
   width:50%;
   padding:20px;
 }
-
+.visible {
+  display: block;
+}
 button {
   color: rgb(56, 25, 160);
   font-weight: bold;

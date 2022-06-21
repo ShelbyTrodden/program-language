@@ -4,25 +4,24 @@ window.addEventListener("load", function() {
     let resetBtn = document.getElementById("reset");
     let form = document.querySelector("form");
     
+    const qOneInput = parseInt(document.getElementById("question1").value());
+    const qTwoInput = parseInt(document.getElementById("question2").value());
+    const qThreeInput= parseInt(document.getElementById("question3").value());
+    const qFourInput = parseInt(document.getElementById("question4").value());
+    const qFiveInput = parseInt(document.getElementById("question5").value());
+    const qSixInput = parseInt(document.getElementById("question6").value());
   
     form.addEventListener("submit", function() {
 
-      const qOneInput = document.getElementById(parseInt("question1").value());
-      const qTwoInput = document.getElementById(parseInt("question2").value());
-      const qThreeInput= document.getElementById(parseInt("question3").value());
-      const qFourInput = document.getElementById(parseInt("question4").value());
-      const qFiveInput = document.getElementById(parseInt("question5").value());
-      const qSixInput = document.getElementById(parseInt("question6").value());
-
       let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
         if (final <6){
-          ("#resultNull").show();
+          document.getElementById("#resultNull").classList.toggle(".visible");
         } else if (final <9){
-          ("#resultA").show();
+          document.getElementById("#resultA").classList.toggle(".visible");
         } else if  (final <13 ){
-          ("#resultB").show();
+          document.getElementById("#resultB").classList.toggle(".visible");
         } else {
-          ("#resultC").show();  
+          document.getElementById("#resultC").classList.toggle(".visible");  
         }
     });
     
@@ -31,11 +30,11 @@ window.addEventListener("load", function() {
     }); 
   
     resetBtn.addEventListener("click", function() {
-      document.getElementById("question1").value = null;
-      document.getElementById("question2").value = null;
-      document.getElementById("question3").value = null;
-      document.getElementById("question4").value = null;
-      document.getElementById("question5").value = null;
-      document.getElementById("question6").value = null;
+      qOneInput.value = null;
+      qTwoInput.value = null;
+      qThreeInput.value = null;
+      qFourInput.value = null;
+      qFiveInput.value = null;
+      qSixInput.value = null;
     });
   });

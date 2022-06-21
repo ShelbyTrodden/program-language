@@ -13,8 +13,8 @@ window.addEventListener("load", function() {
   
     form.addEventListener("submit", function() {
 
-      let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
-        if (final <6){
+      let final = qOneInput + qTwoInput + qThreeInput + qFourInput + qFiveInput + qSixInput
+        if (final <6) {
           document.getElementById("#resultNull").classList.toggle("visible");
         } else if (final <9){
           document.getElementById("#resultA").classList.toggle("visible");

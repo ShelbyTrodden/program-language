@@ -15,13 +15,13 @@ window.addEventListener("load", function() {
 
       let final = qOneInput+qTwoInput+qThreeInput+qFourInput+qFiveInput+qSixInput
         if (final <6){
-          document.getElementById("#resultNull").classList.toggle(".visible");
+          document.getElementById("#resultNull").classList.toggle("visible");
         } else if (final <9){
-          document.getElementById("#resultA").classList.toggle(".visible");
+          document.getElementById("#resultA").classList.toggle("visible");
         } else if  (final <13 ){
-          document.getElementById("#resultB").classList.toggle(".visible");
+          document.getElementById("#resultB").classList.toggle("visible");
         } else {
-          document.getElementById("#resultC").classList.toggle(".visible");  
+          document.getElementById("#resultC").classList.toggle("visible");  
         }
     });
     

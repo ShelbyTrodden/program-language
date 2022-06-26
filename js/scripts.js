@@ -1,15 +1,21 @@
 // User Interface Logic
 window.addEventListener("load", function(event) {
-  event.preventDefault();
 
   const form = document.getElementById("form"); 
-  const results = document.getElementById("results");
   const input = document.getElementById("input");
   const resetBtn = document.getElementById("reset");
+
+  const hidden1 = document.getElementsById(".hidden1");
+    hidden1.style.display=none;
+  const hidden2 = document.getElementsById(".hidden2");
+    hidden2.style.display=none;
+  const hidden3 = document.getElementsById(".hidden3");
+    hidden3.style.display=none;   
    
   
 form.addEventListener("submit", function() {
   event.preventDefault();
+
 
   const qOneInput = parseInt(document.getElementById("#question1").value);
   const qTwoInput = parseInt(document.getElementById("#question2").value);
@@ -20,15 +26,16 @@ form.addEventListener("submit", function() {
 
   const final = qOneInput + qTwoInput + qThreeInput + qFourInput + qFiveInput + qSixInput
     if (final < 6) {
-      document.getElementById("resultNull").classList.toggle("visible");
-    } else if (final < 9){
-      document.getElementById("resultA").classList.toggle("visible");
-    } else if  (final < 13 ){
-      document.getElementById("resultB").classList.toggle("visible");
+      document.getElementById("resultNull");
+    } else if (final < 9) {
+      hidden1.removeAttribute("style");
+    } else if  (final < 13 ) {
+      hidden2.removeAttribute("style");
     } else {
-      document.getElementById("resultC").classList.toggle("visible");  
+      hidden3.removeAttribute("style");  
     }
 
+  
   });
   
 resetBtn.addEventListener("click", function() {
@@ -38,7 +45,5 @@ resetBtn.addEventListener("click", function() {
       qFourInput.value = null;
       qFiveInput.value = null;
       qSixInput.value = null;
-      results.value = null;
- 
     });
   });

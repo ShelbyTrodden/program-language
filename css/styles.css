@@ -2,10 +2,6 @@
   display: none;
 }
 
-#results.visible {
-  display: block;
-}
-
 html {
   scroll-behavior: smooth;
 }

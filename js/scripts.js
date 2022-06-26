@@ -5,11 +5,12 @@ window.addEventListener("load", function(event) {
   const input = document.getElementById("input");
   const resetBtn = document.getElementById("reset");
 
-  const hidden1 = document.getElementsById(".hidden1");
+  const hidden1 = document.getElementById(".hidden1");
+  console.log("hi", hidden1)
     hidden1.style.display=none;
-  const hidden2 = document.getElementsById(".hidden2");
+  const hidden2 = document.getElementById(".hidden2");
     hidden2.style.display=none;
-  const hidden3 = document.getElementsById(".hidden3");
+  const hidden3 = document.getElementById(".hidden3");
     hidden3.style.display=none;   
    
   
@@ -35,7 +36,6 @@ form.addEventListener("submit", function() {
       hidden3.removeAttribute("style");  
     }
 
-  
   });
   
 resetBtn.addEventListener("click", function() {
